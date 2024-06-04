@@ -1,0 +1,160 @@
+.myfooter ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.myfooter ul>li>a {
+    text-decoration: none;
+    color: white;
+}
+.mymainmenu {
+	position: relative;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown:hover {
+	cursor: pointer;
+}
+
+.dropdown-menu {
+	list-style: none;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 90%;
+	background: white;
+	max-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1000;
+	padding: unset;
+	border-radius: 10px;
+	border: 0.125px solid var(--second-bg-color);
+}
+
+.dropdown-expand {
+	display: flex;
+}
+
+.notification-menu {
+	min-width: 380px;
+}
+
+.user-menu {
+	position: absolute;
+}
+
+.fa-circle-user {
+	color: #0d6efd !important;
+}
+.dropdown-menu-content {
+	max-height: 500px;
+	overflow-y: auto;
+}
+
+.dropdown-menu-item {
+	width: 100%;
+}
+
+.dropdown-menu-link {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+
+.dropdown-menu-link div {
+	min-width: 82px;
+	height: 50px;
+	position: relative;
+}
+
+.dropdown-menu-link i {
+	font-size: 1.25rem;
+	color: var(--second-color);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.dropdown-menu-link span {
+	font-size: 15px;
+	width: 298px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dropdown-menu-link span > span {
+	font-size: 10px;
+}
+
+.dropdown-menu-link:hover {
+	cursor: pointer;
+	background: var(--second-bg-color);
+}
+
+.sua {
+	flex-direction: column;
+	position: absolute;
+	top: 100%;
+	right: 10%;
+	background: white;
+	max-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1000;
+	padding: unset;
+	border-radius: 10px;
+	border: 0.125px solid var(--second-bg-color);
+	
+}
+
+
+.img {
+	width: 75%;
+	height: 75%;
+}
+
+.col-9 a {
+	text-decoration: none;
+}
+
+.mua {
+	background-color: red;
+	color: white;
+	border: none;
+}
+
+@media (min-width: 1025px) {
+	.h-custom {
+	height: 100vh !important;
+	}
+	}
+
+.input-group {
+	position: relative;
+}
+
+.form-control {
+	background: #f1f1f1;
+	border: none;
+	outline: none;
+}	
+
+.input-group-text  {
+	background: #f1f1f1 ;
+	border: none !important;
+	outline: none !important;
+
+}
+

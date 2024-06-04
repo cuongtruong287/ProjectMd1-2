@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tama Chan Women's Fashion </title>
+    <link rel="icon" type="image/png" href="../project/asset/Butterfly (1).png">
+    <link rel="stylesheet" href="../session17-Bootstrap/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/fontawesome-free-6.5.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../project/css/index.css">
+
+</head>
+
+<body>
+    <section class="myheader">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-3  ">
+                    <img src="../project/asset/coollogo_com-3878828.png" class="img-fluid" alt="logo">
+                </div>
+                <div class="col-md-4 ">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm..."
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2" > <i class="fas fa-search"  onclick="timKiem()" ></i> </span>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="fs-3 text-danger">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    tư vấn hỗ trợ <br>
+                                    <strong class="text-danger">012345</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="fs-3 text-danger">
+                                        <i class="fa-solid fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    Xin Chào<br>
+                                <a href="../project/pages/singup.html"><strong class="text-danger">Đăng nhập</strong></a>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-2 ">
+                <div class="row">
+                    <div class="col-5">
+                        <a href="./temp.html"  class=" position-relative">
+                            <span class="fs-3"><i class="fa-solid fa-cart-shopping"></i></span>
+                            <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
+                              0
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-7 dropdown">
+                            <span class="fs-3 " ><i class="fa-solid fa-circle-user dropdown-toggle" data-toggle="user-menu"></i></span>
+                            <ul id="user-menu" class="dropdown-menu1 ">
+                                <li class="dropdown-menu-item">
+                                    <a href="#nowhere" class="dropdown-menu-link">
+                                        <div>
+                                            <i class="fas fa-user-tie"></i>
+                                        </div>
+                                        <span>Hồ sơ</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a href="#nowhere" class="dropdown-menu-link">
+                                        <div>
+                                            <i class="fas fa-cog"></i>
+                                        </div>
+                                        <span>Cài đặt</span>
+                                    </a>
+                                </li>
+                                <li class="dropdown-menu-item">
+                                    <a href="#nowhere" class="dropdown-menu-link">
+                                        <div>
+                                            <i class="fas fa-sign-out-alt"></i>
+                                        </div>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+         </div> 
+           <!--end header -->
+    <section class="mymainmenu bg-success" > 
+        <div class="container ">
+            <div class="row dropdown">
+                <div class="col-md-3 text-white py-3 ">
+                    <i class="fas fa-bars dropdown-toggle" data-toggle="notification-menu" ></i> 
+                    <span>Danh mục sản phẩm</span>
+                    <ul class="dropdown-menu"  id="notification-menu">
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-shirt"></i>
+                                </div>
+                                <span>Áo</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <span>Quần</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span>Váy</span>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-item">
+                            <a href="#" class="dropdown-menu-link">
+                                <div>
+                                    <i class="fas fa-shoe-prints"></i>
+                                </div>
+                                <span>Giày</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+                        <div class="container-fluid">
+                          <a class="navbar-brand d-none" href="#">Navbar</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="./index.html">Trang chủ</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Giới thiệu</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Sản phẩm
+                                </a>
+                                <ul class="dropdown-menu text-white" aria-labelledby="navbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Đang sale</a></li>
+                                  <li><a class="dropdown-item" href="#">Bán chạy</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Sản phẩm mới </a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled text-white" href="#" >Tin tức</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled text-white" href="#" >Tuyển dụng</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled text-white" href="#" >Liên hệ</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mymaincontent my-3">
+      <section class="h-100 h-custom" style="background-color: #eee;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card">
+                <div class="card-body p-4">
+      
+                  <div class="row">
+      
+                    <div class="col-lg-7" id="giohang">
+                      <h5 class="mb-3"><a href="#!" class="text-body"><i
+                            class="fas fa-long-arrow-alt-left me-2"></i>Tiếp tục mua sắm</a></h5>
+                      <hr>
+      
+                      <!-- <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                          <p class="mb-1">Giỏ hàng</p>
+                          <p class="mb-0">Bạn đang có 4 món đồ trong giỏ hàng</p>
+                        </div>
+                        <div>
+                          <p class="mb-0"><span class="text-muted">Sắp xếp theo:</span> <a href="#!"
+                              class="text-body">Giá<i class="fas fa-angle-down mt-1"></i></a></p>
+                        </div>
+                      </div> -->
+                        
+                      <!-- <div class="card mb-3">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                                  class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                              </div>
+                              <div class="ms-3">
+                                <h5>Iphone 11 pro</h5>
+                                <p class="small mb-0">256GB, Navy Blue</p>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <div style="width: 50px;">
+                                <h5 class="fw-normal mb-0">2</h5>
+                              </div>
+                              <div style="width: 80px;">
+                                <h5 class="mb-0">$900</h5>
+                              </div>
+                              <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="card mb-3">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img2.webp"
+                                  class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                              </div>
+                              <div class="ms-3">
+                                <h5>Samsung galaxy Note 10 </h5>
+                                <p class="small mb-0">256GB, Navy Blue</p>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <div style="width: 50px;">
+                                <h5 class="fw-normal mb-0">2</h5>
+                              </div>
+                              <div style="width: 80px;">
+                                <h5 class="mb-0">$900</h5>
+                              </div>
+                              <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="card mb-3">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img3.webp"
+                                  class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                              </div>
+                              <div class="ms-3">
+                                <h5>Canon EOS M50</h5>
+                                <p class="small mb-0">Onyx Black</p>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <div style="width: 50px;">
+                                <h5 class="fw-normal mb-0">1</h5>
+                              </div>
+                              <div style="width: 80px;">
+                                <h5 class="mb-0">$1199</h5>
+                              </div>
+                              <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+      
+                      <div class="card mb-3 mb-lg-0">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between">
+                            <div class="d-flex flex-row align-items-center">
+                              <div>
+                                <img
+                                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img4.webp"
+                                  class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+                              </div>
+                              <div class="ms-3">
+                                <h5>MacBook Pro</h5>
+                                <p class="small mb-0">1TB, Graphite</p>
+                              </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center">
+                              <div style="width: 50px;">
+                                <h5 class="fw-normal mb-0">1</h5>
+                              </div>
+                              <div style="width: 80px;">
+                                <h5 class="mb-0">$1799</h5>
+                              </div>
+                              <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+       -->
+                    </div>
+                    <div class="col-lg-5">
+      
+                      <div class="card bg-primary text-white rounded-3">
+                        <div class="card-body">
+                          <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="mb-0">Chi tiết thẻ</h5>
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                              class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                          </div>
+      
+                          <p class="small mb-2">Loại thẻ</p>
+                          <a href="#!" type="submit" class="text-white"><i
+                              class="fab fa-cc-mastercard fa-2x me-2"></i></a>
+                          <a href="#!" type="submit" class="text-white"><i
+                              class="fab fa-cc-visa fa-2x me-2"></i></a>
+                          <a href="#!" type="submit" class="text-white"><i
+                              class="fab fa-cc-amex fa-2x me-2"></i></a>
+                          <a href="#!" type="submit" class="text-white"><i class="fab fa-cc-paypal fa-2x"></i></a>
+      
+                          <form class="mt-4">
+                            <div class="form-outline form-white mb-4">
+                              <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                placeholder="Tên chủ thẻ" />
+                              <label class="form-label" for="typeName">Tên chủ thẻ</label>
+                            </div>
+      
+                            <div class="form-outline form-white mb-4">
+                              <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                placeholder="1234 5678 9012 3457" minlength="17" maxlength="17" />
+                              <label class="form-label" for="typeText">Số thẻ</label>
+                            </div>
+      
+                            <div class="row mb-4">
+                              <div class="col-md-6">
+                                <div class="form-outline form-white">
+                                  <input type="text" id="typeExp" class="form-control form-control-lg"
+                                    placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                                  <label class="form-label" for="typeExp">Hết hạn</label>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="form-outline form-white">
+                                  <input type="password" id="typeText" class="form-control form-control-lg"
+                                    placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                  <label class="form-label" for="typeText">Cvv</label>
+                                </div>
+                              </div>
+                            </div>
+      
+                          </form>
+      
+                          <hr class="my-4" >
+      
+                          <div class="d-flex justify-content-between" id="totalPrice">
+                            <p class="mb-2">Tổng tiền</p>
+                            <p class="mb-2">$4798.00</p>
+                          </div>
+      
+                          <div class="d-flex justify-content-between">
+                            <p class="mb-2">Phí ship</p>
+                            <p class="mb-2">0đ</p>
+                          </div>
+      
+                          <div class="d-flex justify-content-between mb-4" id="taxTotalPrice">
+                            <p class="mb-2">Tổng cộng(Đã bao gồm thuế) </p>
+                            <p class="mb-2">$4818.00</p>
+                          </div>
+      
+                          <button type="button" class="btn btn-info btn-block btn-lg">
+                            <div class="d-flex justify-content-between">
+                              <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                            </div>
+                          </button>
+      
+                        </div>
+                      </div>
+      
+                    </div>
+      
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- footer -->
+    <section class="myfooter bg-dark text-white py-4"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4 class="fs-5">VĂN PHÒNG GIAO DỊCH</h4>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Sản phẩm</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fs-5">VỀ CHÚNG TÔI</h4>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Sản phẩm</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fs-5">CHÍNH SÁCH BÁN HÀNG</h4>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Sản phẩm</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="fs-5"> DÕI CHÚNG TÔI</h4>
+                    <ul>
+                        <li>Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Sản phẩm</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 class="fs-5">THIÊN ĐƯỜNG MUA SẮM TAMA CHAN </h4>
+                    <p>Địa chỉ: HP-VN  Điện thoại: 01234</p>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="fs-5">NHẬN TIN KHUYẾN MÃI</h4>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Nhập email của bạn" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <span class="input-group-text text-white bg-danger" id="basic-addon2">Đăng kí</span>
+                      </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+               <div class="col-md-6">Bản quyền thuộc về Tama Chan </div>
+               <div class="col-md-6 text-end">
+                    Trang chủ  Giới thiệu  Sản phẩm  Tin tức Câu hỏi thường gặp
+               </div>
+            </div>
+        </div>
+    </section>
+    <script src="../session17-Bootstrap/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../project/js/cart.js"></script>
+</body>
+
+</html>
